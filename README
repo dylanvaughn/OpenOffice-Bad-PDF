@@ -1,0 +1,18 @@
+This PDF was created from a pptx file using OpenOffice 3 and PyODConverter.  Trying to make a png out of it with:
+
+convert test_ppt_to_pdf.pdf[0] -thumbnail '100x100>' test_output.png
+
+Produces:
+
+Error: /typecheck in --run--
+Operand stack:
+   --nostringval--   --dict:7/16(L)--   F2   18   --dict:8/8(L)--   --dict:8/8(L)--   --nostringval--   --nostringval--   Encoding
+Execution stack:
+   %interp_exit   .runexec2   --nostringval--   --nostringval--   --nostringval--   2   %stopped_push   --nostringval--   --nostringval--   --nostringval--   false   1   %stopped_push   1862   1   3   %oparray_pop   1861   1   3   %oparray_pop   1845   1   3   %oparray_pop   --nostringval--   --nostringval--   2   1   1   --nostringval--   %for_pos_int_continue   --nostringval--   --nostringval--   --nostringval--   --nostringval--   %array_continue   --nostringval--   false   1   %stopped_push   --nostringval--   %loop_continue   --nostringval--   --nostringval--   --nostringval--   --nostringval--   --nostringval--
+Dictionary stack:
+   --dict:1157/1684(ro)(G)--   --dict:1/20(G)--   --dict:74/200(L)--   --dict:74/200(L)--   --dict:106/127(ro)(G)--   --dict:278/300(ro)(G)--   --dict:22/25(L)--   --dict:4/6(L)--   --dict:21/40(L)--   --dict:3/5(L)--   --dict:8/8(L)--
+Current allocation mode is local
+GPL Ghostscript 8.64: Unrecoverable error, exit code 1
+convert: Postscript delegate failed `test_ppt_to_pdf.pdf': No such file or directory @ coders/pdf.c/ReadPDFImage/592.
+convert: missing an image filename `test_output.png' @ wand/convert.c/ConvertImageCommand/2710.
+
